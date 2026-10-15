@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  cloudsentinel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cloudsentinel-app
+    ports:
+      - "8005:8005"
+    environment:
+      - PORT=8005
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    restart: unless-stopped
