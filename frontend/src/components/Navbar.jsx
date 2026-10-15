@@ -19,8 +19,8 @@ export default function Navbar({
         {/* Brand */}
         <div className="flex items-center space-x-3">
           <div className="relative">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
-              <ShieldAlert className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 rounded-xl bg-slate-900 border border-cyan-500/30 flex items-center justify-center p-1.5 shadow-lg shadow-cyan-500/20">
+              <img src="/logo.svg" alt="CloudSentinel Logo" className="w-full h-full object-contain" />
             </div>
             <span className="absolute -top-1 -right-1 flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
